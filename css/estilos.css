@@ -1,0 +1,451 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,700i,900&display=swap');
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body{
+    font-family: 'Lato', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+/* Generales */
+.contenedor {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.btn {
+    padding: .5rem;
+    background-color: #badc58;
+    color: #fff;
+    border: none;
+    flex: .5;
+    cursor: pointer;
+    border-radius: 5px;
+}
+div i.fa-plus-square,
+i.fa-trash-alt {
+    display: block;
+    font-size: 2.5rem;
+    text-align: center;
+    padding-top: .5rem;
+    color: #535c68;
+}
+p {
+    text-align: center;
+}
+.regresar-a {
+    display: inline-block;
+    margin-top: 1rem;
+    margin-left: 4rem;
+    text-decoration: none;
+    color: #034cac;
+}
+.regresar-a:hover {
+    color: #8ab7f1;
+}
+.centrado {
+    margin-left: 8.5rem;
+}
+.centrar {
+    display: block;
+    margin: 0 auto;
+}
+/* Header */
+.soplas {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    align-items: center;
+}
+.barra {
+    padding: 1rem;
+    background-color: #f6e58d;
+    border-top-left-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+}
+
+.barra nav a {
+    color: #1F3E70;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.barra nav a:last-of-type{
+    margin-right: 0;
+}
+
+.soplas div.logo img {
+    width: 150px;
+}
+/* Pagina principal */
+.principal{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    column-gap: 3rem;
+    margin-top: 5rem;
+}
+.principal img {
+    border-radius: 2%;
+}
+.logo-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo-principal img {
+    width: 150px;
+}
+.candado p{
+    text-align: justify;
+}
+.texto-principal1 {
+    font-size: 25px;
+    color: #f0932b;
+}
+.texto-principal {
+    font-size: 20px;
+    color: #525252;
+}
+.botones-principal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.botones-principal a {
+    background-color: #7ed6df;
+    padding: 1rem 2rem;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-top: 1rem;
+    border-radius: 20rem;
+}
+/* Registro */
+.reg span {
+    font-weight: 900;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #f0932b;
+}
+.reg {
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #535c68;
+}
+.formulario {
+    display: block;
+    margin-top: 5rem;
+    -webkit-box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 10px -2px rgba(0,0,0,0.75);
+    width: 35%;
+    margin: 0 auto;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    border-radius: 2rem;
+}
+input:not([type="submit"]){
+    display: block;
+    margin: 0 auto 1.3rem auto;
+    width: 90%;
+    padding: .5rem;
+    background-color: #dff9fb;
+    border: none;
+    border-radius: 1em;
+}
+.enviar {
+    display: flex;
+    justify-content: flex-end;
+}
+input[type="submit"]{
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Login */
+.centrar-top {
+    padding-top: 1rem;
+    margin-bottom: 7rem;
+}
+.flex {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+    padding-left: 15%;
+}
+.imagen-login img {
+    height: 80%;
+    width: 60%;
+    margin-left: -5rem;
+}
+.login {
+    margin-left: 10rem;
+    z-index: 2;
+    background-color: #fff;
+}
+
+/* Perfil */
+.contenedor-user {
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.foto i {
+    align-self: unset;
+    font-size: 5rem;
+    background-color: #dff9fb;
+    border-radius: 5rem;
+}
+h1 {
+    text-align: center;
+}
+.lista-tarjetas {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.lista-tarjetas div.color-tabla {
+    text-align: center;
+    background-color: #badc58;
+    border-radius: .1rem;
+}
+
+.nombre-user {
+    font-size: 20px;
+    background-color: #dff9fb;
+    color: #535c68;
+    padding: .6rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+/* Footer */
+.dat {
+    font-size: 20px;
+    font-style: italic;
+    padding: 2%;
+    margin-top: 3%;
+    color: #fff;
+    background-color: #7ed6df;
+    width: auto;
+    height: auto;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.dat a:hover{
+	text-decoration: underline;
+	color: dodgerblue;
+}
+.widget {
+    float: right;
+}
+
+.widget p {
+    display: inline-block;
+    line-height: 1em;
+}
+
+.contac {
+    display: inline-block;
+}
+/* Configuracion */
+.modificar {
+    width: 40%;
+    margin: 0 auto;
+}
+label {
+    margin-left: 2rem;
+}
+.cancelar {
+    width: 10%;
+    margin: 1rem auto;
+}
+.cancelar-modificacion {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: #eb4d4b;
+    color: #fff;
+    padding: .5rem;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+/*apartr de aqui se aplican los estilos a la tabla tarjeta del usuario*/
+.form{
+ height: 50px;
+}
+.mov2{
+   transform: translateX(16rem);
+   position: relative;
+   top: -3.5rem;
+  
+}
+.mov3{
+    transform: translateX(32rem);
+    position: relative;
+    top: -7rem;
+    
+}
+.mov4{
+    display: block;
+    transform: translateX(50rem);
+    position: relative;
+    top: -10.2rem;
+    text-decoration: none;
+    background: #dff9fb;
+    padding: 5px 10px;
+    text-align: center;
+    width: 50%;
+    color: #000;
+    box-sizing: border-box;
+ }
+ .mov5{
+     display: inline-block;
+    transform: translateX(60rem);
+    position: relative;
+    top: -12rem;
+    text-decoration: none;
+    background: #dff9fb;
+    padding: 5px 10px;
+    text-align: center;
+    width: 50%;
+    color: #000;
+    box-sizing: border-box;
+ }
+.enviar{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    /*background: #dff9fb; Crea conflictos*/
+    color: #000;
+} /*aqui termina la estilizacion de la tabla tarjeta usuario*/
+
+
+/*Inicio estilos, formulario de recarga*/
+.none{
+    display: none !important;
+}
+.minimi{
+    width: 45% !important;
+}
+.topo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+}
+.centrado{
+    margin: 0 auto;
+    transform: translateX(2.1rem);
+}
+.parada{
+    width: 35rem !important;
+    transform: translateX(20rem);
+    position: relative;
+    top: 0rem;
+    z-index: 1;
+}
+.subir{
+    transform: translateY(-3rem);
+}
+/*ESTILOS TABLA DE COMPROBANTE DE COBR0*/
+table#basofia{
+    border: 2px solid rgb(123, 197, 187);
+   
+}
+/* Formulario recarga de tarjeta */
+.tituloRec{
+    margin-top: 13rem;
+    color: #535c68;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.cuerpoRec{
+    background-color: rgb(238, 238, 238);
+}
+.rec-targ{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    height: 400px;
+    width: 850px;
+    margin: 0 auto;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+.formularioRec{
+    width: 30rem;
+}
+.formularioRec input{
+    width: 100%;
+    margin-left: 8%;
+}
+.textoFech{
+    text-align: left;
+    padding-left: 2.5rem;
+    color: #535c68;
+    text-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.fechaexp-tar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.abajoRecTar{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.espIzq{
+    margin-left: 1rem;
+}
+
+.imgTarjeta{
+    width: 50rem;
+}
+.cancelar{
+    padding: .6rem;
+    background-color: #eb4d4b;
+    text-decoration: none;
+    color: #fff;
+    margin-left: 7rem;
+    border-radius: 5px;
+    position: relative;
+    top: 2px;
+}
+/*Estilos para formulario de recuperacion de tarjeta*/
+.restaurar{
+    display: block;
+    /* position: relative;
+    left: 33rem; */
+    width: 6.5%;
+}
+form#recuperar input[type="text"]{
+    width: 60%;
+}
+.btn2 {
+    padding: 0 .5rem;
+    background-color: #badc58;
+    color: #fff;
+    border: none;
+    flex: 0;
+    cursor: pointer;
+    height: 2.5rem;
+    border-radius: 5px;
+}
+form#recuperar div.container {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-around;
+    align-items: center;
+    flex-grow: 0;
+}
